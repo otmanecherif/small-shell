@@ -1,0 +1,11 @@
+OBJ = slash
+CC = gcc
+
+
+slash:
+	$(CC) -o $(OBJ) slash.c -lreadline
+
+.PHONY: clean
+
+clean:
+	rm -f slash
